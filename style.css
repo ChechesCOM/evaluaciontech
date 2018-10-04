@@ -1,0 +1,48 @@
+
+*
+{
+    font-family: Calibri, Arial;
+}
+input
+{
+    border-radius: 0.3em;
+    width: 15em;
+}
+
+
+* 
+{
+    box-sizing: border-box;
+    text-align: center;
+    font-family: serif;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    width: 960px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 15%;
+
+
+}
+
+h1 {
+    font-size: 60px;
+    border: #01DF02 1em solid;
+    display: center;
+	border-radius: 1em;
+	background-color: #01DF02;
+    color: white;
+    box-shadow: 5px 5px 5px #999;
+                
+				
+
+}
+
+#btn{
+    float:right;
+    color: blue;
+    margin: 20px;
+}

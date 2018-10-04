@@ -4,7 +4,7 @@ module.exports = (sequelize, DataTypes) => {
     name: DataTypes.STRING
   }, {});
   carros.associate = function(models) {
-    compras.belongsTo(models.conductores, {
+    carros.belongsTo(models.conductores, {
   });
   return carros;
 }};

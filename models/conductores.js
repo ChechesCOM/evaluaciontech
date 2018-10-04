@@ -4,7 +4,9 @@ module.exports = (sequelize, DataTypes) => {
     name: DataTypes.STRING
   }, {});
   Conductores.associate = function(models) {
-    // associations can be defined here
+    Conductores.belongsTo(models.Escuderia,{
+      
+    })
   };
   return Conductores;
 };

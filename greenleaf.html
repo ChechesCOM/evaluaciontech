@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Green Leaves</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+    <h1>Green Leaves</h1>
+
+    <form id="forma">
+        Nombre:<input id="name" type="text" name="nombre" /><br />
+        E-mail:<input id="mail" type="text" name="email" /><br />
+        Teléfono:<input id="tel" type="text" name="telefono" /><br />
+        Fecha:<input id="date" type="text" name="fecha" /><br />
+        Ciudad y Estado:<input id="place" type="text" name="ciudad" /><br />
+        <input id="btn" type="submit" value="Enviar" onclick="formData()" />
+    </form>
+
+
+    <script type="text/javascript">
+        function formData(data) {
+            if (typeof (Storage) !== "undefined") {
+                localStorage.nombre = document.getElementById("name").value;
+                localStorage.email = document.getElementById("mail").value;
+                localStorage.telefono = document.getElementById("tel").value;
+                localStorage.fecha = document.getElementById("date").value;
+                localStorage.ciudad = document.getElementById("place").value
+            }
+            else {
+                console.log(yey);
+                alert("error")
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>
